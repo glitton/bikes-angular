@@ -74,21 +74,21 @@ i.fa.fa-bicycle {
 .speed {
   position: relative;
   left: 179px;
-  bottom: 28px;
+  bottom: 32px;
   color: black;
 }
 
 .weight {
   position: relative;
   left: 281px;
-  bottom: 56px;
+  bottom: 63px;
   color: black;
 }
 
 .price {
   position: relative;
   left: 370px;
-  bottom: 84px;
+  bottom: 95px;
   color: black;
 }
 
