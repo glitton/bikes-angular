@@ -1,0 +1,96 @@
+<!-- Based on Citizen Bike Web site, not for commercial sale -->
+<!-- Built with AngularJS -->
+<!DOCTYPE html>
+<html ng-app="foldingBikes">
+<head>
+  <meta charset="UTF-8">
+  <title>Citizen Bikes eCommerce AngularJS</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/bike.ico" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Bootstrap CSS internal -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- Google Font CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- AngularJS script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  <!-- My JS -->
+  <script src="js/app.js"></script> 
+</head>
+<body>
+<!-- Nav Bar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="bike-logo" src="img/bike-logo.png" alt="folding-bike">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Fold-A-Bike</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="phone"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></li>
+        <li class="phone-number">800-buy-bike</li>
+        <li class="cart"><a href="#"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row" id="bikes" ng-controller="bikeController"> 
+
+    <div class="col-md-6" ng-repeat="bike in bikes">
+      <h2 class="bike-title"> {{ bike.brand }}</h2> 
+      <img class="img-responsive" ng-src="{{bike.image}}" />
+      <h4 class="frame">
+        <i class="fa fa-bicycle"> {{ bike.frame }}</i>
+      </h4> 
+      <h4 class="speed">
+        <i class="fa fa-cog"> {{ bike.speed }}</i>
+      </h4> 
+      <h4 class="weight">
+        <i class="fa fa-balance-scale"> {{ bike.weight }}</i>
+      </h4> 
+      <h4 class="price">
+        <i class="fa fa-usd"> {{ bike.price | currency }}</i>
+      </h4>
+      <button class="btn btn-primary btn-md">Add To Cart</button>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>   
+</div> <!-- end of container -->
+
+<!-- Footer section -->
+<footer>
+  <p>Source: <a href="http://www.citizenbike.com/">Citizen Bikes</a></p>
+</footer>
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/b4869d6fbe.js"></script>
+  <!-- jQuery  -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+  <!-- <script src="js/main.js"></script>         -->
+</body>
+</html>

@@ -1,0 +1,117 @@
+/*Citizen Bike eCommerce CSS*/
+
+body {
+  margin: 0;
+  padding: 0;
+  /*background-color: #f5f4ef;*/
+  background-color: #e8f1f4;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+footer {
+  font-family: 'Arvo', serif;
+}
+
+nav {
+  height: 100px;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+.bike-logo {
+  position: relative;
+  bottom: 30px;
+}
+
+.phone-number {
+  position: relative;
+  color: white;
+  right: 25px;
+  top: 15px;
+}
+
+.phone {
+  right: 35px;
+  top: 10px;
+  color: white;
+}
+
+.cart{
+  bottom: 8px;
+}
+
+.bike-title {
+  text-align: left;
+  top: 48px;
+  position: relative;    
+  color: black;
+  left: 15px; 
+}
+
+img.img-responsive {
+  height: 500px;
+  width: 500px;
+}
+
+i.fa.fa-bicycle {
+  font-size: 20px;
+  color: black;
+}
+
+.frame {
+  margin-left: 86px;
+}
+
+.speed {
+  position: relative;
+  left: 179px;
+  bottom: 28px;
+  color: black;
+}
+
+.weight {
+  position: relative;
+  left: 281px;
+  bottom: 56px;
+  color: black;
+}
+
+.price {
+  position: relative;
+  left: 370px;
+  bottom: 84px;
+  color: black;
+}
+
+.btn {
+  position: absolute;
+  bottom: 42px;
+  left: 207px;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+footer {
+  height: 52px;
+  background-color: #033c73;
+  border-color: #022f5a;
+}  
+
+footer p {
+  margin-left: 100px;
+  padding: 15px;
+  color: white;
+}   
+
+footer p a {
+  color: white;
+}
